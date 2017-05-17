@@ -1,0 +1,16 @@
+# language
+lang: zh-CN
+#Nav
+menu:
+  Home: /
+  Archives: /archives
+  About: /about
+# rss
+rss: /atom.xml
+# favicon
+favicon: null
+
+# logo
+logo: /images/logo.jpg
+
+excerpt_link: Read More
