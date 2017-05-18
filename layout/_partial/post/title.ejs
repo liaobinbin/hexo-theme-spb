@@ -11,5 +11,10 @@
     <h1 class="<%= class_name %>" itemprop="name">
       <%= post.title %>
     </h1>
+    <div class="tag-list">
+                <i>Tag: </i>
+                <%- partial('post/tag') %>
+    </div>
+      <% } %>
   <% } %>
 <% } %>
