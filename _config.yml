@@ -1,16 +1,22 @@
-# language
-lang: zh-CN
-#Nav
 menu:
-  Home: /
-  Archives: /archives
-  About: /about
-# rss
-rss: /atom.xml
-# favicon
-favicon: null
+    Blog: /
+    Archive: /archives/
+    Weibo: http://weibo.com/sunchongsheng
+    GitHub: https://github.com/pinggod
+    Rss: /atom.xml
 
-# logo
-logo: /images/logo.jpg
+favicon: /favicon.png
+logo: /logo.jpg
 
-excerpt_link: Read More
+# Comment
+# e.g disqus: seansun
+disqus:
+duoshuo:
+cloudTie:
+
+# Analytics
+# google-analytics:
+ga: UA-65933410-1
+
+# Copyright Infomation
+startyear: 2015

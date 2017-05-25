@@ -1,0 +1,25 @@
+meta(charset="utf-8")
+
+meta(name="X-UA-Compatible", content="IE=edge")
+meta(name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1")
+//Disable transformation
+meta(http-equiv="Cache-Control" content="no-transform")
+meta(http-equiv="Cache-Control" content="no-siteapp")
+
+//Website description
+- if (page.description)
+    meta(name="description" content=page.description)
+- else if (page.title)
+    meta(name="description" content=page.title)
+- else if (config.description)
+    meta(name="description" content=config.description)
+- else
+    meta(name="description" content="Just A Hexo Blog!")
+
+//Website keywords
+- if (page.keywords)
+    meta(name="keywords" content=page.keywords)
+- else if (page.tags && page.tags.length)
+    meta(name="keywords" content=each tag in page.tags)
+- else
+    meta(name="keywords" content="No Keyword")

@@ -1,0 +1,21 @@
+//Website mata
+include _head/meta.pug
+//Website rss
+- if ((theme.rss === 'default') && config.feed && config.feed.path)
+    link(rel="search", type="application/opensearchdescription+xml", href=config.feed.path, title=config.title)
+- else if (theme.rss)
+    link(rel="search", type="application/opensearchdescription+xml", href=theme.rss, title=config.title)
+- else
+    link(rel="search", type="application/opensearchdescription+xml", href='/atom.xml', title=config.title)
+
+//Website favicon
+- if (theme.favicon)
+    link(rel="shortcut icon" type=type="image/x-icon" href=url_for(theme.favicon) + "?v=" + theme.version)
+
+//Theme styling
+link(rel="stylesheet", href=url_for("css/style.css"))
+
+
+// Fancybox styling
+- if (theme.theme.fancybox)
+    link(rel="stylesheet" type="text/css" href=url_for('lib/fancybox/jquery.fancybox.css'))
