@@ -1,12 +1,18 @@
-extends partial/layout.pug
+doctype html
+//- head file
+head(lang=config.language)
+    include partial/head.pug
 
-block container
-    include  mixins/post.pug
-    +posts()
-
-block pagination
-    include mixins/paginator.pug
-    +home()
-block copyright
-    include partial/copyright.pug
-
+//- index main
+body
+    //- navbar
+    .navbar
+        include partial/nav.pug
+    //- logo
+    .logo
+        img.hvr-bob(src=theme.logo, alt=config.title)
+    .main
+        //- title
+        h1#title-animation #{config.title}
+        //- information
+        p#information-animation #{theme.info}
