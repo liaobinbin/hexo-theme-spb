@@ -14,16 +14,21 @@ a {
     text-decoration: none;
 }
 
-/*设置全局被点击后的链接颜色*/ 
-a:visited {color: #35b558 !important} 
-/*设置全局鼠标悬停在链接上未点击时的颜色*/ 
-a:hover {color: #ddd !important} 
+/*设置全局被点击后的链接颜色*/
+a:visited {color: #35b558 !important}
+/*设置全局鼠标悬停在链接上未点击时的颜色*/
+a:hover {color: #ddd !important}
 /*设置全局鼠标在点击链接瞬间发生的动作*/
-a:active {color: #000 !important} 
+a:active {color: #000 !important}
 /*--navbar--*/
 .navbar {
+    position: fixed;
+    top:0;
+    height: 50px;
+    width: 100%;
     border-bottom: 1px solid #ddd;
     text-align: right;
+    background: #24292e;
 }
 .navbar > ul > li{
     display: inline-block;
