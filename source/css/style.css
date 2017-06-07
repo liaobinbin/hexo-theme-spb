@@ -27,7 +27,7 @@ a:active {color: #000}
     height: 50px;
     width: 100%;
     border-bottom: 1px solid #ddd;
-    text-align: right; /
+    text-align: right;
     background: #24292e;
 }
 .navbar > ul > li{
