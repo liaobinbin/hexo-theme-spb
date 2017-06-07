@@ -4,7 +4,7 @@
 body {
    padding: 0;
    margin: 0;
-   color: #888888;
+   color: #24292e;
    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
 }
 ul > li {
@@ -13,13 +13,13 @@ ul > li {
 a {
     text-decoration: none;
 }
-
+a:link {color:#fff}
 /*设置全局被点击后的链接颜色*/
-a:visited {color: #35b558 !important}
+a:visited {color: #fff}
 /*设置全局鼠标悬停在链接上未点击时的颜色*/
-a:hover {color: #ddd !important}
+a:hover {color: #fff}
 /*设置全局鼠标在点击链接瞬间发生的动作*/
-a:active {color: #000 !important}
+a:active {color: #000}
 /*--navbar--*/
 .navbar {
     position: fixed;
@@ -27,7 +27,7 @@ a:active {color: #000 !important}
     height: 50px;
     width: 100%;
     border-bottom: 1px solid #ddd;
-    text-align: right;
+    text-align: right; /
     background: #24292e;
 }
 .navbar > ul > li{
@@ -38,8 +38,9 @@ a:active {color: #000 !important}
     margin-right: 50px;
 }
 .navbar > ul > li > a{
-    color:#35b558;
+    color:rgba(255,255,255,0.75);
 }
+
 /*--logo--*/
 .logo {
     margin-top: 160px;
@@ -77,14 +78,10 @@ a:active {color: #000 !important}
     margin: 0 4px;
     height: 26px;
     width: 60px;
-    background: #35b558;
-    color: #fff;
-    border: 1px solid #35b558;
+    line-height: 26px;
+    color: #24292e !important;
+    border: 1px dashed #c0c5c2;
     border-radius: 5px;
-    animation: logoshadow 3s forwards;
-    -moz-animation: logoshadow 3s forwards;	/* Firefox */
-    -webkit-animation: logoshadow 3s forwards;	/* Safari 和 Chrome */
-    -o-animation: logoshadow 3s forwards;	/* Opera */
 }
 .button:hover{
   -webkit-animation-name: hvr-bob-float, hvr-bob;
