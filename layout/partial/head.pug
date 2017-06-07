@@ -39,6 +39,8 @@ title #{config.title}
 - if (theme.favicon)
     link(rel="shortcut icon" type=type="image/x-icon" href=url_for(theme.favicon) + "?v=" + theme.version)
 
+// Reset CSS
+link(rel="stylesheet", href=url_for("css/normalize.css"))
 //Theme styling
 link(rel="stylesheet", href=url_for("css/style.css"))
 

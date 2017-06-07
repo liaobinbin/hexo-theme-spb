@@ -1,15 +1,20 @@
-doctype
-html(lang=config.language)
-    head
-        include head.pug
-    body
-        .wrap
-            header
-                a.logo-link(href=url_for())
-                    img(src=url_for(theme.logo) alt="logo")
-                include nav.pug
-            main.container
-                block container
-            footer
-                block pagination
-                block copyright
+doctype html
+//- head file
+head(lang=config.language)
+    include head.pug
+
+//- index main
+body
+    //- navbar
+    .navbar
+        include nav.pug
+
+    block pageinfo
+        
+    //- block container
+    .container
+        block container
+
+    //- block paginator
+    .paginator
+        block paginator

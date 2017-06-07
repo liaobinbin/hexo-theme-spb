@@ -39,9 +39,15 @@ mixin postList()
 //- Post Page
 mixin post(item)
     .post
-        article.post-block
-            h1.post-title
-                != item.title
-            +postInfo(item)
-            .post-content
-                != item.content
+        .post-content #{item.content}
+
+//- Post Title
+mixin postTitle(item)
+    .info
+        .info-main
+            h1.post-title #{item.title}
+            ul.other
+                li 测试
+        .info-tag
+            ul
+                li 标签

@@ -1,14 +1,6 @@
-doctype html
-//- head file
-head(lang=config.language)
-    include partial/head.pug
+extends partial/layout.pug
 
-//- index main
-body
-    //- navbar
-    .navbar
-        include partial/nav.pug
-    //- logo
+block container  
     .logo
         img.hvr-bob(src=theme.logo, alt=config.title)
     .main
@@ -18,5 +10,5 @@ body
         p#information-animation #{theme.info}
         //- social button
         .social
-          each val in theme.social
-            a(href=val.v, title=val.t).button #{val.t}
+            each val in theme.social
+                a(href=val.v, title=val.t).button #{val.t}

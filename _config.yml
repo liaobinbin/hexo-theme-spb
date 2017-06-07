@@ -2,8 +2,8 @@ menu:
   Home: /
   Resume: /resume/
   Archive: /archives/
-  Blog: http://weibo.com/sunchongsheng
-  Books: https://github.com/pinggod
+  Blog: /blog/
+  Books: /books/
   Rss: /atom.xml
 
 favicon: /favicon.png

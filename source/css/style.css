@@ -1,9 +1,11 @@
 @charset "utf-8";
 
 /*--common--*/
+* {
+  margin:0;padding:0;
+}
+
 body {
-   padding: 0;
-   margin: 0;
    color: #24292e;
    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
 }
@@ -22,9 +24,8 @@ a:hover {color: #fff}
 a:active {color: #000}
 /*--navbar--*/
 .navbar {
-    position: fixed;
-    top:0;
     height: 50px;
+    line-height: 50px;
     width: 100%;
     border-bottom: 1px solid #ddd;
     text-align: right;
@@ -99,8 +100,28 @@ a:active {color: #000}
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
 }
+ /*-- page-infor --*/
+ .page-info {
+    height: 100px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e1e4e8;
+    background: #fafbfc;
 
+ }
+ .info {
+   width: 980px;
+   margin: 0 auto;
 
+ }
+ .info-main > ul {
+   float: right;
+ }
+/*-- contianer --*/
+.container {
+  width: 980px;
+  margin: 0 auto;
+  padding: 10px;
+}
 
 
 /*--animation--*/
