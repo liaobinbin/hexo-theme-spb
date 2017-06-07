@@ -1,29 +1,41 @@
 menu:
-    Blog: /
-    Archive: /archives/
-    Weibo: http://weibo.com/sunchongsheng
-    GitHub: https://github.com/pinggod
-    Rss: /atom.xml
+  Blog: /
+  Archive: /archives/
+  Weibo: http://weibo.com/sunchongsheng
+  GitHub: https://github.com/pinggod
+  Rss: /atom.xml
 
 favicon: /favicon.png
 logo: /logo.jpg
 
 # index information
-info: "It's some information"
+info: "It's some information"#
 # social
-social: [
-  {t: 'Sina',
-   v: 'http://weibo.com'}
+social: [{
+        t: 'Sina',
+        v: 'http://weibo.com'
+    },
+    {
+        t: 'Twitter',
+        v: 'https://twitter.com'
+    },
+    {
+        t: 'Twitter',
+        v: 'https://twitter.com'
+    },
+    {
+        t: 'Twitter',
+        v: 'https://twitter.com'
+    }
 ]
-# Comment
-# e.g disqus: seansun
-disqus:
-duoshuo:
-cloudTie:
 
-# Analytics
-# google-analytics:
-ga: UA-65933410-1 
+# Comment# e.g disqus: seansun
+disqus:
+    duoshuo:
+    cloudTie:
+
+#Analytics# google - analytics:
+ga: UA - 65933410 - 1
 
 # Copyright Infomation
 startyear: 2015
