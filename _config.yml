@@ -1,15 +1,16 @@
 menu:
-  Blog: /
+  Home: /
+  Resume: /resume/
   Archive: /archives/
-  Weibo: http://weibo.com/sunchongsheng
-  GitHub: https://github.com/pinggod
+  Blog: http://weibo.com/sunchongsheng
+  Books: https://github.com/pinggod
   Rss: /atom.xml
 
 favicon: /favicon.png
 logo: /logo.jpg
 
 # index information
-info: "It's some information"#
+info: "以前是有病，追求爱情。现在病好了，只喜欢钱。"
 # social
 social: [{
         t: 'Sina',
